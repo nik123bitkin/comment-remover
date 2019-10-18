@@ -10,11 +10,6 @@ std::string Editor::RemoveComments(std::string source)
 		TokenType tokenType = getTokenType(*it);
 		state = static_cast<State>(states[state][tokenType]);
 
-		if (state == stError) {
-			//cout << "Source code contains syntax error" << endl;
-			break;
-		}
-
 		if (state == stWaitSlashAst) {
 			prev_it = it;
 		}

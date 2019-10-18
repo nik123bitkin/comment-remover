@@ -32,6 +32,5 @@ int main(int argc, char *argv[])
 	}
 	outstream << dest;
 	std::cout << "Finished..." << std::endl;
-    getchar();
 	return 0;
 }
